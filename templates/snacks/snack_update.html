@@ -1,0 +1,17 @@
+{% extends '_base.html' %}
+
+
+    {% block name  %}  
+    
+    <h2>what you wanna to update</h2>
+ 
+    <form action="" method="post">
+
+    {% csrf_token %}
+
+    {{form.as_p}}
+    <input type="submit" value="save">
+    </form>
+    
+    
+     {% endblock  %}
